@@ -157,7 +157,7 @@ nav {
 }
 
 .hero-text p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   color: #b0b0b0;
   margin-bottom: 2rem;
 }
@@ -243,15 +243,16 @@ nav {
 
 .hero-image img {
   width: 100%;
-  max-width: 400px;
+  margin-left: 100px;
+  max-width: 300px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(81, 110, 238, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 25px 50px rgba(81, 110, 238, 0.5), 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
 }
 
 .hero-image img:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 /* Section Headers */
@@ -332,7 +333,7 @@ nav {
   max-width: 6000px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(81, 110, 238, 0.2);
+  box-shadow: 0 25px 50px rgba(81, 110, 238, 0.4), 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 /* Skills Section */
@@ -730,6 +731,9 @@ nav {
 #element {
   color: #516eee;
   font-weight: 600;
+  min-height: 3rem; /* Fixed height to prevent layout shift */
+  display: inline-block;
+  vertical-align: top;
 }
 
 #cursor {
